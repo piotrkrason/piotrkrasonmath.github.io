@@ -1,6 +1,15 @@
+
+.menu_item {
+	margin-right:20px;
+}
+
+.menu_item:hover {
+	text-decoration: underline;
+}
+
 body {
   background-color: #fff;
-  padding:50px;
+  padding:40px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;

@@ -1,18 +1,20 @@
 #!/bin/bash
 
-function replaceTemplate() {
-	local templateType=$1
-	local file=$2
+function replaceTemplates() {
+	local file=$1
 	
 	local fileHtml_templated=`cat $file`
-	local templateHtml=`cat "${templateType}.source"`
+	local headHtml=`cat "head.source"`
+	local menuHtml=`cat "menu.source"`
 	
 	IFS=$'\n' read -d '' -r -a fileHtml_split <<< "$fileHtml_templated"
 	
 	fileHtml_final=()
 	for ithLine in "${fileHtml_split[@]}"; do
-		if [[ $ithLine == *"{{${templateType}}}"* ]]; then
-		  fileHtml_final+=("${templateHtml}")
+		if [[ $ithLine == *"{{head}}"* ]]; then
+		  fileHtml_final+=("${headHtml}")
+		elif [[ $ithLine == *"{{menu}}"* ]]; then
+		  fileHtml_final+=("${menuHtml}")
 		else
 			fileHtml_final+=("${ithLine}")
 		fi
@@ -22,10 +24,12 @@ function replaceTemplate() {
 	echo "${fileHtml_final[@]}"
 }
 
+templates=(head menu)
+
 for file in *.html; do
 	echo "Processing $file file.."
 	page=${file/.html/}
-	html=$(replaceTemplate head $file)
+	html=$(replaceTemplates $file)
 	
 	echo "$html" > "../${file}"
 	
