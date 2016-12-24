@@ -1,0 +1,37 @@
+<!doctype html> 
+ <html> 
+ <head> 
+ 	<title>Prizes</title> 
+ 	 
+ 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="main.css" type="text/css" media="screen">
+	<script src='main.js'></script> 
+      
+ </head> 
+ 	 
+ <body> 
+ 	<h2 style="margin:0 auto; width:860px; margin-bottom:30px;"><a class="menu_item" href="./">Home</a><a class="menu_item" href="positions.html">Positions</a><a class="menu_item" href="studies.html">Studies</a><a class="menu_item" href="publications.html">Publications</a><a class="menu_item" href="seminars.html">Seminars</a></h2>
+ 	<div class="wrapper"> 
+ 		<h3>National Level Prizes</h3> 
+ 		<ul> 
+ 			<h3> 2004 -  Prize of the Polish  Minister of National Education and Sports </h3>
+      
+      <h3> (with G.Banaszak and W.Gajda )</h3>
+       <h3> for the following  (joint with G.Banaszak and W.Gajda ) publications</h3>
+       <h3> "On Galois representations for abelian varieties </h3>
+       <h3> with complex and real multiplications"</h3>
+       <h3> "Support problem for the intermaediate Jacobians of l-adic representations" </h3>
+       <h3> "Detecting linear dependence by reduction maps" </h3>
+ 			 
+ 		</ul> 
+ 		</div> 
+ 	</body> 
+ 	</html> 
